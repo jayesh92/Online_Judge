@@ -1,0 +1,92 @@
+<html>
+<head>
+	<link rel="icon" type"image/png" href="images/favicon.png" />
+<title>SUBMIT</title>
+<style type="text/css">
+body {
+	background: url(images/oj-bg.jpg) ;
+     }
+h1
+{
+	text-align:center;
+	padding:50px 0px 0px 0px;
+	font-size:80px;
+	color:#CD853F;
+}
+#nav
+{
+	margin:-10px 0 0 0;
+	padding:0 0 40px 220px;
+}
+#nav li
+{
+	display:inline;
+}a{outline:0}
+#nav li a
+{  
+	font-size:12px;
+	   text-decoration: none;
+	   float:left;
+	   padding:10px 60px 10px 60px;
+	   background-color: #404040;
+	   color:#ffffff;
+	   font-weight:bold;
+	   //border-bottom-color:#000000;
+	   //border-bottom-style:solid;
+}
+#nav li a:hover
+{
+	   background-color:#B0B0B0;
+	   padding-bottom:10px;
+}
+#content
+{
+margin: 140px 140px 180px 140px;
+padding: 20px 20px 20px 20px;
+border-style:solid;
+background-color:#A8A8A8;
+}
+#footer {width:900px;margin: auto;text-align:right;padding:50px 0;font-size:15px;}
+</style>
+</head>
+<body>
+<div style="width:960px; height: 900px; background-color:#FFF; margin-left: 180px; margin-top: 120px; margin-bottom: 80px;">
+<h1> SUBMIT</h1>
+<ul id="nav"> 
+    <li><a href="oj.html">Problems</a></li> 
+    <li><a href="submit.html">Submit</a></li>
+    <li><a href="status.html">Status</a></li>
+</ul>
+
+<br />
+<div id="content">
+<h2>UPLOAD:-</h2>
+<form name="submission" method="post" action="cgi-bin/myoj.cgi" enctype="multipart/form-data" required="required">
+<table>
+	<tr>
+		<td>Nick:</td>
+		<td><input type="text" name="user" required="true"/></td>
+	</tr>
+	
+	<tr>
+		<td>File To Be Uploaded:</td>
+		<td><input type="file" name="upload" required="true"></td>
+	</tr>
+	<tr>
+	</tr>
+	
+	<tr>
+		<td>
+		<input type="submit" value="Submit"/>
+		<input type="reset" value="Clear" />
+		</td>
+	<tr/>
+</table>
+</form>
+</div>
+<div id="footer">
+<a href="http://web.iiit.ac.in/~jayesh.lahori" >Jayesh Lahori</a>
+</div>
+</div>
+</body>
+</html>
